@@ -1,0 +1,166 @@
+/* Styles for the wrapper containing the list of repositories */
+.repos-wrapper{
+    width: 100%;
+}
+
+/* Styles for the main container */
+.main{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+/* Styles for navigation links */
+nav a{
+    margin-right: 1em;
+    color: #c4c4c4;
+    font-size: 1.2rem;
+}
+
+nav a:hover{
+    text-decoration: none;
+}
+
+/* Styles for section heading */
+section h1{
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+    font-size: 2em;
+    /* Gradient text effect */
+    background: linear-gradient(90deg,rgb(53, 189, 166),#ffcfdf);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    letter-spacing: -.03em;
+}
+
+/* Styles for repository list container */
+.repos-wrapper ul{
+    display: flex;
+    justify-content: space-between;
+    border: 0.2rem solid #20222e;
+    border-radius: 0.7em;
+    padding: 1.5em 0.5em;
+    width: 320px;
+    height: 80px;
+    margin-bottom:2em;
+    /* Gradient background */
+    background: linear-gradient(180deg,rgba(35,37,49,.5),rgba(15,15,24,.5));
+}
+
+/* Hover effect for repository list */
+.repos-wrapper ul:hover{
+    border-left: 5px solid rgb(53, 189, 166);
+    transition: 5s ease;
+}
+
+/* Styles for repository list items */
+.repos-wrapper ul li{
+    display: flex;
+    gap: 0.5em; 
+}
+
+.repos-wrapper ul li span{
+    color: #c4c4c4;
+    font-size: 20px;
+}
+
+.repos-wrapper ul a{
+    text-decoration: none;
+    color: #c4c4c4;
+    font-size: 16px;
+}
+
+/* Styles for public badge */
+.public{
+    background-color: rgb(53, 189, 166);
+    width: 60px;
+    height: 30px;
+    padding: 0.1em 0.35em;
+    margin-top: -0.2em;
+    border-radius: 10px;
+}
+
+/* Styles for search container */
+.search{
+    display: flex;
+    justify-content: center;
+}
+
+/* Styles for search input */
+input{
+    width: 50%;
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    border-radius: .5rem;
+    background: transparent;
+    border: 2px solid var(--color-primary-variant);
+    resize: none; /* avoid text area being resized */
+    color: var(--color-white);
+}
+
+/* Placeholder text color */
+::placeholder {
+    color: #c4c4c4;
+}
+
+/* Media queries for medium devices (Tablets) */
+@media screen and (max-width: 1024px){
+    .repos-wrapper ul{
+        width: 300px;
+    }
+   
+    .main{
+        display: grid;
+        place-items: center;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* Media queries for small devices (Mobiles) */
+@media screen and (max-width: 600px){
+    .repos-wrapper ul{
+        width: 280px;
+    }
+
+    .main{
+        display: grid;
+        place-items: center;
+        grid-template-columns: 1fr;
+    }
+
+    .main{
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+    }
+}
+
+/** post style **/
+.post-info{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.post-info p{
+    font-size: 1.3em;
+    color: #c4c4c4;
+}
+
+.post-info a{
+    color:#c4c4c4;
+}
+
+.post-info a:hover{
+    text-decoration: none;
+}
+
+/* Loading message style */
+.loading{
+    color: white;
+    font-size: px;
+}

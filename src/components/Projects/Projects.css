@@ -1,0 +1,121 @@
+.project{
+    margin-top: 4em; /* Top margin for the project section */
+}
+
+.project-header{
+    font-size: 23px; /* Font size for the project headers */
+    margin-bottom: 0.8em; /* Bottom margin for the project headers */
+    background: linear-gradient(90deg,#b0f3f1,#ffcfdf); /* Gradient background for text */
+    -webkit-background-clip: text; /* Clip text to background */
+    -webkit-text-fill-color: transparent; /* Make text transparent */
+    background-clip: text; /* Clip background to text */
+    letter-spacing: -.03em; /* Letter spacing */
+}
+
+.project-header-text p{
+    font-size: 1.1rem; /* Font size for paragraph in project header */
+    color: #c4c4c4; /* Text color */
+    line-height: 130.4%; /* Line height */
+}
+
+.projects{
+    margin-top: 4em; /* Top margin for projects */
+}
+
+.card{
+    border:1px solid transparent; /* Transparent border */
+    border-radius: 2em; /* Border radius */
+    padding: 3em 2em; /* Padding */
+    width: 300px; /* Card width */
+    height: 350px; /* Card height */
+    margin-bottom:5em; /* Bottom margin for cards */
+    margin-left: auto; /* Auto left margin */
+    margin-right: auto; /* Auto right margin */
+    background:linear-gradient(180deg,rgba(35,37,49,.5),rgba(15,15,24,.5)); /* Gradient background */
+}
+
+.card-header{
+    display: flex; /* Flex display for card header */
+    flex-direction: column; /* Flex direction */
+}
+
+.card-header span{
+    font-size: 5rem; /* Font size for icons */
+}
+
+.card-header h2{
+    color: #fff; /* Text color */
+    font-size: 25.76px; /* Font size for card header */
+    line-height: 125%; /* Line height */
+    margin-bottom: 0.5em; /* Bottom margin for card header */
+}
+
+.card-text p{
+    font-size: 0.9rem; /* Font size for paragraph in card text */
+    color: #c4c4c4; /* Text color */
+    line-height: 130.4%; /* Line height */
+    margin-bottom: 1.5em; /* Bottom margin for paragraph */
+}
+
+.card-link a{
+    text-decoration: none; /* Remove underline */
+    font-size: 15px; /* Font size for links */
+    text-transform: uppercase; /* Uppercase text */
+    border-bottom: 2px solid #c4c4c4; /* Border bottom */
+    padding: 0.3em 0; /* Padding for links */
+}
+
+.project-one .card-header span, .project-one .card-link a{
+    color: #6B9796; /* Color for project one links and icons */
+}
+
+.project-two .card-header span, .project-two .card-link a{
+    color: #e6972f; /* Color for project two links and icons */
+}
+
+/* Search Bar */
+.search__container{
+    display: grid; /* Grid display for search container */
+    background: transparent; /* Transparent background */
+    padding: 1.2rem; /* Padding */
+    border-radius: 2rem; /* Border radius */
+    border: 1px solid transparent; /* Transparent border */
+    transition: var(--transition); /* Transition effect */
+    margin-top: 20px; /* Top margin for search container */
+}
+
+.search__container-image{
+    display: grid; /* Grid display for search container image */
+    border-radius: 1.5rem; /* Border radius */
+    gap: 2.5rem; /* Gap */
+    overflow: hidden; /* Hidden overflow */
+}
+
+.search__container h3{
+    margin: 1.5rem 0 .5rem; /* Margin for heading */
+    display: center; /* Center display */
+    text-align: center; /* Text alignment */
+}
+
+.search__container-cta{
+    display: grid; /* Grid display for search container CTA */
+    margin-top: 2rem; /* Top margin */
+    margin-bottom: 1rem; /* Bottom margin */
+    gap: 1rem; /* Gap */
+} 
+
+/* Media queries for medium devices(Tablets) */
+@media screen and (max-width: 1024px) {
+    .project{
+        grid-template-columns: 1fr 1fr; /* Grid template columns for medium devices */
+        gap: 1.2rem; /* Gap */
+    }
+}
+
+/* Media queries for small devices(Mobiles) */
+@media screen and (max-width: 600px) {
+    .project{
+        grid-template-columns: 1fr; /* Grid template columns for small devices */
+        gap: 1rem; /* Gap */
+    }
+}

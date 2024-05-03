@@ -1,0 +1,65 @@
+/* SearchBar.css */
+
+/* Styles for the container element */
+.container {
+  width: 80rem; /* Sets the container width to 80rem */
+  position: relative; /* Positions the container relative to its normal position */
+  margin-top: 5rem; /* Adds margin of 5rem on top */
+}
+
+/* Styles for the search icon container */
+.search-icon {
+  position: absolute; /* Positions the icon absolutely within the container */
+  top: 55%; /* Positions the icon 55% from the top of the container */
+  left: 10px; /* Positions the icon 10px from the left edge */
+  transform: translateY(-50%); /* Vertically centers the icon within its container */
+}
+
+/* Styles for the search input textbox */
+.textbox {
+  border: 1px solid #ffffff; /* Sets the border to 1px solid white */
+  height: 3rem; /* Sets the height of the textbox to 3rem */
+  outline: none; /* Removes the default outline around the textbox */
+  box-sizing: border-box; /* Ensures padding and border are included in the total width */
+  padding: 6px 40px 9px 40px; /* Adjusts padding to accommodate search icon */
+  transition: 0.2s ease-in-out; /* Adds a smooth transition effect for changes in styles */
+  width: 100%; /* Sets the width of the textbox to 100% of its container */
+}
+
+/* Styles for the textbox when it's focused */
+.textbox:focus {
+  border: 1px solid rgb(165, 155, 159); /* Changes the border color to a light gray on focus */
+  transition: 0.5s ease-in-out; /* Smooth transition for border change */
+}
+
+/* Styles for the suggestions container element */
+.suggestions {
+  overflow-y: scroll; /* Enables scrolling for the suggestions list if it overflows */
+  border: 1px solid #868282; /* Sets the border to 1px solid with a dark gray color */
+  background-color: rgb(17, 17, 17); /* Sets the background color to dark gray */
+  max-height: 230rem; /* Sets the maximum height of the suggestions container */
+  width: 47%; /* Sets the width of the suggestions container to 47% of its parent */
+  height: fit-content; /* Sets the height to fit its content, but not exceed container */
+  position: absolute; /* Positions the suggestions container absolutely relative to the textbox */
+  z-index: 10; /* Sets the z-index to 10 to ensure it appears above other elements */
+}
+
+/* Styles for the suggestions container when it's hidden */
+.suggestions.hidden {
+  visibility: hidden; /* Hides the suggestions container by setting visibility to hidden */
+}
+
+/* Styles for a single suggestion element */
+.suggestion {
+  cursor: pointer; /* Sets the cursor to a pointer when hovering over a suggestion */
+  box-sizing: border-box; /* Ensures padding is included in the total width */
+  padding: 1px 10px; /* Adds padding of 1px on top/bottom and 10px on left/right */
+  height: 2rem; /* Sets the height of each suggestion to 2rem */
+  display: grid; /* Uses a grid layout for horizontal alignment (alternative to flex) */
+  align-items: center; /* Aligns content vertically within the suggestion */
+}
+
+/* Styles for a single suggestion element when hovered over */
+.suggestion:hover {
+  background-color: #201919; /* Changes the background color to a darker gray on hover */
+}
