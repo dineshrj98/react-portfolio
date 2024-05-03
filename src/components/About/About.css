@@ -1,0 +1,127 @@
+/* Styling for the container holding the about section */
+.about__container {
+    display: grid;
+    grid-template-columns: 30% 50%; /* Define grid columns */
+    gap: 15%; /* Define gap between grid items */
+}
+
+/* Styling for the about me section */
+.about__me {
+    width: 120%; /* Adjust width */
+    aspect-ratio: 0; /* Ensure aspect ratio */
+    border-radius: 2rem; /* Rounded border */
+    display: grid;
+    place-items: center; /* Center content */
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+/* Styling for the image in the about me section */
+.about__me-image {
+    border-radius: 2rem;
+    overflow: hidden;
+    transition: var(--transition); /* Define transition */
+}
+
+/* Styling for the cards section */
+.about__cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Define grid columns */
+    gap: 1.5rem; /* Define gap between grid items */
+}
+
+/* Styling for individual cards */
+.about__card {
+    background: var(--color-bg-variant); /* Set background color */
+    border: 1px solid transparent; /* Set border */
+    border-radius: 1rem; /* Rounded border */
+    padding: .6rem; /* Set padding */
+    text-align: center; /* Center text */
+    transition: var(--transition); /* Define transition */
+}
+
+/* Hover effect for individual cards */
+.about__card:hover {
+    background: transparent; /* Change background color on hover */
+    border-color: var(--color-primary); /* Change border color on hover */
+    cursor: default; /* Set cursor */
+}
+
+/* Styling for icons within cards */
+.about__icon {
+    color: var(--color-primary); /* Set icon color */
+    font-size: 1.4rem; /* Set icon size */
+    margin-bottom: 1rem; /* Set margin */
+}
+
+/* Styling for headings within cards */
+.about__card h5 {
+    font-size: 0.95rem; /* Set font size */
+}
+
+/* Styling for small text within cards */
+.about__card small {
+    font-size: .7rem; /* Set font size */
+    color: var(--color-light); /* Set text color */
+}
+
+/* Styling for content paragraph */
+.about__content p {
+    margin: 2rem 0 2.6rem; /* Set margin */
+    color: var(--color-light); /* Set text color */
+}
+
+/* Styling for Kanye API container */
+.kanye-container {
+    background-color: rgba(5, 1, 1, 0.1); /* Set background color with opacity */
+    border-radius: 10px; /* Rounded border */
+    border: 1px transparent; /* Set border */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Add box shadow */
+    padding: 20px; /* Set padding */
+    margin: 20px; /* Set margin */
+    text-align: center; /* Center text */
+    transition: transform 0.3s ease-in-out; /* Define transition */
+}
+
+/* Hover effect for Kanye API container */
+.kanye-container:hover {
+    transform: translateY(-5px); /* Move container up on hover */
+}
+
+/* Media queries for medium devices (Tablets) */
+@media screen and (max-width: 1024px) {
+    .about__container {
+        grid-template-columns: 1fr; /* Adjust grid columns */
+        gap: 0; /* Remove gap between grid items */
+    }
+
+    .about__me {
+        width: 50%; /* Adjust width */
+        margin: 2rem auto 4rem; /* Adjust margin */
+    }
+
+    .about__content p {
+        margin: 1rem 0 1.5rem; /* Adjust margin */
+    }
+}
+
+/* Media queries for small devices (Mobiles) */
+@media screen and (max-width: 600px) {
+    .about__me {
+        width: 65%; /* Adjust width */
+        margin: 0 auto 3rem; /* Adjust margin */
+    }
+
+    .about__cards {
+        grid-template-columns: 1fr 1fr; /* Adjust grid columns */
+        gap: 1rem; /* Adjust gap between grid items */
+    }
+
+    .about__content {
+        text-align: center; /* Center text */
+    }
+
+    .about__content p {
+        margin: 1.5rem 0; /* Adjust margin */
+    }
+}
