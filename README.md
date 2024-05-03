@@ -17,16 +17,9 @@
 *** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
 -->
-<h2 align="center">NOTE: The frontend is broken. I'm working on fixing it </h2>
-<div align="center">
-
-[![GPL3.0 License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
-
-</div>
 
 
-<h3 align="center">Portfolio-API</h3>
+<h3 align="center">React-Portfolio</h3>
 
   <p align="center">
     This is a project used to combining all my knowledge learned till date for developing web apps.
