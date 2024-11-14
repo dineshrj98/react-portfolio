@@ -17,7 +17,7 @@
     "web-vitals": "^2.1.4"
   },
   
-  "homepage": "https://dineshrj98.github.io/react-portfolio",
+  "homepage": "https://dineshrj98.github.io/",
   "scripts": {
     "start": "react-scripts start",
     "predeploy": "npm run build",
