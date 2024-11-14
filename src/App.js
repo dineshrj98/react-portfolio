@@ -16,7 +16,7 @@ function App() {
   return (
     <> 
     <Routes>
-      <Route path='/' element={<Home />} />
+      <Route path='/react-portfolio' element={<Home />} />
       <Route path='/about' element={<About />} />
       <Route path='/experiernce' element={<Experience />} />
       <Route path='/projects' element={<Projects />} />
