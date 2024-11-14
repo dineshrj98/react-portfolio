@@ -13,12 +13,6 @@ const About = () => {
       <h5>Get To Know</h5>
       <h2>About Me</h2>
 
-      {/* Kanye quote container */}
-      <div className="kanye-container">
-        <h5> Refresh to discover Kanye's latest wisdom for the world! </h5>
-        <Kanye />
-      </div>
-
       {/* About me container */}
       <div className="container about__container">
         {/* Image container */}
