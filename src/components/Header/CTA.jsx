@@ -1,7 +1,7 @@
 // CTA.jsx
 
 import React from 'react'; // Importing React library
-import CV from '../../assets/Dinesh-Ezhil-Bio-Data-New.pdf'; // Importing CV file path
+import CV from '../../assets/Dinesh_Ezhil_New_Link.pdf'; // Importing CV file path
 
 // CTA component
 const CTA = () => {
