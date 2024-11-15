@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/react-portfolio/static/css/main.ac9eaeb1.css",
-    "main.js": "/react-portfolio/static/js/main.983fae92.js",
+    "main.js": "/react-portfolio/static/js/main.4882d78a.js",
     "static/media/flip_img.png": "/react-portfolio/static/media/flip_img.4415200a6e224eaecc0e.png",
-    "static/media/Dinesh-Ezhil-Bio-Data-New.pdf": "/react-portfolio/static/media/Dinesh-Ezhil-Bio-Data-New.ae03074fabc823e93ddf.pdf",
+    "static/media/Dinesh_Ezhil_New_Link.pdf": "/react-portfolio/static/media/Dinesh_Ezhil_New_Link.2f42ff59d6793193a5d0.pdf",
     "index.html": "/react-portfolio/index.html",
     "main.ac9eaeb1.css.map": "/react-portfolio/static/css/main.ac9eaeb1.css.map",
-    "main.983fae92.js.map": "/react-portfolio/static/js/main.983fae92.js.map"
+    "main.4882d78a.js.map": "/react-portfolio/static/js/main.4882d78a.js.map"
   },
   "entrypoints": [
     "static/css/main.ac9eaeb1.css",
-    "static/js/main.983fae92.js"
+    "static/js/main.4882d78a.js"
   ]
 }
