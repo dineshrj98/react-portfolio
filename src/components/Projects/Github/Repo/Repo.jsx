@@ -46,7 +46,7 @@ export default function Repos() {
         <>
           {/* Navigation links */}
           <nav>
-            <Link to="/"><AiOutlineHome /></Link>
+            <Link to="/react-portfolio"><AiOutlineHome /></Link>
             <Link to="/github"><AiOutlineArrowLeft /></Link>
           </nav>
 

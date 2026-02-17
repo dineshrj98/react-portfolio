@@ -52,7 +52,7 @@ export default function Github() {
         <>
           {/* Navigation back to home */}
           <nav>
-            <Link to="/">
+            <Link to="/react-portfolio">
               <AiOutlineHome />
             </Link>
           </nav>
