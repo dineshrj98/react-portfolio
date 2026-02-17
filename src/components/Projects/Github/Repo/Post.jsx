@@ -32,7 +32,7 @@ export default function Repo() {
       ) : repo ? ( // If repository data is available
         <>
           <nav>
-            <Link to="/react-portfolio"><AiOutlineHome/></Link>
+            <Link to="/"><AiOutlineHome/></Link>
             <Link to="/repo"><AiOutlineArrowLeft/></Link>
           </nav>
           <section className="post-wrapper">
