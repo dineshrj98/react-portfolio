@@ -29,7 +29,7 @@ const SearchEngine = () => {
     <div>
       <nav>
         {/* Link to the home page using React Router */}
-        <Link to="/">
+        <Link to="/react -portfolio">
           <AiOutlineHome /> {/* Display the Home icon */}
         </Link>
       </nav>

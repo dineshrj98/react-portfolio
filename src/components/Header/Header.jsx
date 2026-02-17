@@ -21,7 +21,7 @@ const Header = () => {
         <h1>Dinesh Ezhil</h1>
 
         {/* User description */}
-        <h5 className="text-light">Master’s Student at QUT | Ex-Data Scientist</h5>
+        <h5 className="text-light">Junior Data Scientist</h5>
 
         {/* Call to action button */}
         <CTA />

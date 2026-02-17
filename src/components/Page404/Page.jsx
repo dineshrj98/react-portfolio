@@ -19,7 +19,7 @@ export default function Page(){
         </div>
         <div className="page-text-bottom">
           <p>The page you are looking for might have been removed, had its name changed or is temporarily unavailable.</p>
-          <Link to="/">Go to Homepage</Link>
+          <Link to="/react-portfolio">Go to Homepage</Link>
         </div>
       </div> 
       </>
