@@ -1,0 +1,41 @@
+/* Styles for pagination container */
+.pagination {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 1rem; /* Add margin space at the top */
+}
+
+/* Styles for pagination buttons */
+.pagination button {
+    width: 40px;
+    height: 40px;
+    font-family: inherit;
+    font-weight: 600;
+    font-size: 16px;
+    margin: 0 10px; /* Add margin space around each button */
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background: transparent;
+    color: #eee; /* Button text color */
+    border-color: #eee; /* Button border color */
+}
+
+/* Styles for active pagination button */
+.pagination button.active {
+    font-size: 20px; /* Increase font size for active button */
+    color: #c8e1ff; /* Text color for active button */
+    text-decoration: none; /* Remove underline */
+    color: #fff; /* Text color for active button */
+    background-color: rgb(53, 189, 166); /* Background color for active button */
+    font-size: 1rem; /* Font size for active button */
+    font-weight: 700; /* Font weight for active button */
+    border-radius: 10px; /* Border radius for active button */
+}
+
+/* Hover styles for pagination buttons */
+.pagination button:hover {
+    background-color: transparent; /* Change background color on hover */
+    border: 1px solid rgb(53, 189, 166); /* Add border on hover */
+}

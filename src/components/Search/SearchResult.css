@@ -1,0 +1,68 @@
+/* SearchResult.css */
+
+/* Styles for the main search result container */
+.search-result-container {
+  border: 1px solid #ccc; /* Adds a 1px solid border with color #ccc */
+  border-radius: 10px; /* Rounds corners with a 10px radius */
+  padding: 20px; /* Adds padding of 20px on all sides */
+  margin-top: 20px; /* Adds margin of 20px on top */
+}
+
+/* Styles for the search result header (title) */
+.search-result-header {
+  display: flex; /* Arranges elements horizontally */
+  justify-content: center; /* Centers content horizontally */
+  align-items: center; /* Centers content vertically */
+  margin-bottom: 20px; /* Adds margin of 20px on bottom */
+}
+
+/* Styles for the search result name in the header */
+.search-result-name {
+  margin-right: 20px; /* Adds margin of 20px on right */
+}
+
+/* Styles for the search result image */
+.search-result-image {
+  width: 200px; /* Sets image width to 200px */
+  height: 200px; /* Sets image height to 200px */
+  border-radius: 50%; /* Rounds corners to create a circular image */
+}
+
+/* Styles for the overall information section */
+.search-result-info {
+  display: flex; /* Arranges elements horizontally */
+  flex-wrap: wrap; /* Allows elements to wrap onto multiple lines if needed */
+}
+
+/* Styles for the rating section within the info */
+.search-result-rating {
+  display: flex; /* Arranges elements horizontally */
+  align-items: center; /* Centers content vertically */
+  margin-bottom: 10px; /* Adds margin of 10px on bottom */
+}
+
+/* Styles for an icon within the rating section (likely star icon) */
+.icon {
+  margin-right: 5px; /* Adds margin of 5px on right */
+}
+
+/* Styles for the details section within the info */
+.search-result-details {
+  display: flex; /* Arranges elements horizontally */
+  flex-wrap: wrap; /* Allows elements to wrap onto multiple lines if needed */
+}
+
+/* Styles for individual detail sections */
+.search-result-detail {
+  display: flex; /* Arranges elements horizontally */
+  align-items: center; /* Centers content vertically */
+  width: 50%; /* Sets width to 50% (half the container) */
+  margin-bottom: 10px; /* Adds margin of 10px on bottom */
+}
+
+/* Responsive behavior for smaller screens (max-width 768px) */
+@media (max-width: 768px) {
+  .search-result-detail {
+    width: 100%; /* Makes details full width on smaller screens */
+  }
+}

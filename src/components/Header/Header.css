@@ -1,0 +1,75 @@
+/* Header CSS */
+
+/* Styling for header */
+header {
+  height: 35vh; /* Set header height */
+  padding-top: 7rem; /* Add padding to top */
+  overflow: hidden; /* Hide overflow content */
+}
+
+/* Styling for header container */
+.header__container {
+  text-align: center; /* Center align text */
+  height: 100%; /* Set container height */
+  position: relative; /* Set position to relative */
+}
+
+/* Styling for call-to-action (CTA) buttons */
+.cta {
+  margin-top: 2.5rem; /* Add top margin */
+  display: flex; /* Use flex display */
+  gap: 1.2rem; /* Set gap between buttons */
+  justify-content: center; /* Center align buttons */
+}
+
+/* Styling for header socials */
+.header__socials {
+  display: flex; /* Use flex display */
+  flex-direction: column; /* Align items in column */
+  align-items: center; /* Center align items */
+  gap: 0.9rem; /* Set gap between items */
+  position: absolute; /* Set position to absolute */
+  left: 0; /* Align to left */
+  bottom: 2rem; /* Set bottom position */
+}
+
+/* Styling for header socials after pseudo-element */
+.header__socials::after {
+  content: ""; /* Add content */
+  width: 1px; /* Set width */
+  height: 2rem; /* Set height */
+  background: var(--color-primary); /* Set background color */
+}
+
+/* Styling for scroll down button */
+.scroll__down {
+  position: absolute; /* Set position to absolute */
+  right: -2.3rem; /* Set right position */
+  bottom: 5rem; /* Set bottom position */
+  transform: rotate(90deg); /* Rotate button */
+  font-weight: 300; /* Set font weight */
+  font-size: 0.9rem; /* Set font size */
+}
+
+/* Media queries for medium devices (Tablets) */
+@media screen and (max-width: 1024px) {
+  header {
+    height: 60vh; /* Set header height */
+  }
+}
+
+/* Media queries for small devices (Mobiles) */
+@media screen and (max-width: 600px) {
+  header {
+    height: 100vh; /* Set header height */
+  }
+
+  .header__socials,
+  .scroll__down {
+    display: none; /* Hide socials and scroll down button */
+  }
+
+  .me > img {
+    margin-top: 2.5rem; /* Add top margin to image */
+  }
+}

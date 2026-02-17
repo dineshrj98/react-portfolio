@@ -1,0 +1,127 @@
+.github-wrapper {
+    /* Center the content horizontally and vertically */
+    display: grid;
+    place-items: center;
+    text-align: center;
+  }
+  
+  .github-img {
+    /* Center the image horizontally and vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .github-img img {
+    /* Circular image with border */
+    border-radius: 50%;
+    width: 50%;
+    border: 7px solid rgb(30, 45, 67);
+    margin-bottom: 1.5em; /* Spacing below the image */
+    margin-top: 6em; /* Spacing above the image */
+  }
+  
+  .github-name h1 {
+    /* Styling for user name */
+    font-size: 2.5rem;
+    font-weight: 500;
+    margin-bottom: 10px;
+    color: rgb(246, 248, 250); /* Text color */
+  }
+  
+  .github-name h2 {
+    /* Styling for user bio */
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: #a3c0b8; /* Text color */
+    margin-bottom: 1.2em; /* Spacing below the bio */
+  }
+  
+  .github-lo-cr {
+    /* Styling for location and created details */
+    display: flex;
+    justify-content: center;
+    gap: 2em; /* Spacing between elements */
+    color: #c8e1ff; /* Text color */
+    font-size: 19px; /* Font size */
+    margin-bottom: 1.5em; /* Spacing below the location and created details */
+  }
+  
+  .location,
+  .created {
+    /* Styling for location and created elements */
+    display: flex;
+    gap: 0.3em; /* Spacing between elements */
+  }
+  
+  .location p {
+    margin-top: -0.5px; /* Adjust vertical alignment */
+  }
+  
+  .github-cards {
+    /* Styling for repository, followers, and following cards */
+    display: flex;
+    justify-content: center;
+    gap: 1em; /* Spacing between cards */
+    margin-bottom: 2em; /* Spacing below the cards */
+    text-transform: uppercase; /* Convert text to uppercase */
+  }
+  
+  .repository,
+  .followers,
+  .following {
+    /* Styling for repository, followers, and following cards */
+    border: 0.2rem solid #20222e; /* Border */
+    padding: 1em 2em; /* Padding */
+    background: linear-gradient(
+      180deg,
+      rgba(35, 37, 49, 0.5),
+      rgba(15, 15, 24, 0.5)
+    ); /* Background gradient */
+  }
+  
+  .repository span,
+  .followers span,
+  .following span {
+    /* Styling for numbers within cards */
+    color: #f6f8fa; /* Text color */
+    font-size: 30px; /* Font size */
+  }
+  
+  .repository p,
+  .followers p,
+  .following p {
+    /* Styling for text within cards */
+    color: #c8e1ffb3; /* Text color */
+    font-size: 1rem; /* Font size */
+    margin-top: 0.5em; /* Spacing above the text */
+  }
+  
+  .github-repo-link a {
+    /* Styling for link to view repositories */
+    font-size: 20px; /* Font size */
+    color: #c8e1ff; /* Text color */
+    text-transform: uppercase; /* Convert text to uppercase */
+    text-decoration: none; /* Remove default link decoration */
+    color: #fff; /* Text color */
+    background-color: rgb(53, 189, 166); /* Background color */
+    padding: 0.8em 2em; /* Padding */
+    font-size: 1rem; /* Font size */
+    font-weight: 700; /* Font weight */
+    border-radius: 10px; /* Border radius */
+  }
+  
+  .github-repo-link a:hover {
+    /* Hover effect for link */
+    background-color: transparent; /* Transparent background */
+    border: 1px solid rgb(53, 189, 166); /* Border */
+  }
+  
+  @media screen and (max-width: 50px) {
+    /* Media query for small screens */
+    .github-cards {
+      display: flex;
+      flex-direction: column; /* Change flex direction to column */
+    }
+  }
+  

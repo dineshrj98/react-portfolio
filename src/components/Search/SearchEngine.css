@@ -1,0 +1,54 @@
+/* Styles for the container element */
+.container {
+  width: 30rem; /* Sets the width of the container to 30rem */
+  position: relative; /* Positions the container relative to its normal position in the document flow */
+}
+
+/* Styles for the textbox element */
+.textbox {
+  border: 1px solid #f3f3f3; /* Adds a 1px solid border with color #f3f3f3 */
+  height: 2rem; /* Sets the height of the textbox to 2rem */
+  outline: none; /* Removes the default outline around the textbox */
+  box-sizing: border-box; /* Ensures padding and border are included in the total width */
+  padding: 1px 10px; /* Adds padding of 1px on top/bottom and 10px on left/right */
+  transition: 0.2s ease-in-out; /* Adds a smooth transition effect for changes in styles */
+  width: 100%; /* Sets the width of the textbox to 100% of its container */
+}
+
+/* Styles for the textbox element when it's focused */
+.textbox:focus {
+  border: 1px solid blue; /* Changes the border color to blue when focused */
+  transition: 0.2s ease-in-out; /* Maintains the smooth transition effect */
+}
+
+/* Styles for the suggestions container element */
+.suggestions {
+  overflow-y: scroll; /* Enables scrolling for the suggestions list if it overflows */
+  border: 1px solid #f3f3f3; /* Adds a 1px solid border with color #f3f3f3 */
+  background-color: white; /* Sets the background color to white */
+  max-height: 20rem; /* Sets the maximum height of the suggestions container to 20rem */
+  width: 100%; /* Sets the width of the suggestions container to 100% of its container */
+  height: fit-content; /* Sets the height to fit its content, but not exceed container */
+  position: absolute; /* Positions the suggestions container absolutely relative to the textbox */
+  z-index: 10; /* Sets the z-index to 10 to ensure it appears above other elements */
+}
+
+/* Styles for the suggestions container when it's hidden */
+.suggestions.hidden {
+  visibility: hidden; /* Hides the suggestions container by setting visibility to hidden */
+}
+
+/* Styles for a single suggestion element */
+.suggestion {
+  cursor: pointer; /* Sets the cursor to a pointer when hovering over a suggestion */
+  box-sizing: border-box; /* Ensures padding is included in the total width */
+  padding: 1px 10px; /* Adds padding of 1px on top/bottom and 10px on left/right */
+  height: 2rem; /* Sets the height of each suggestion to 2rem */
+  display: flex; /* Allows for horizontal alignment of content within the suggestion */
+  align-items: center; /* Aligns content vertically within the suggestion */
+}
+
+/* Styles for a single suggestion element when hovered over */
+.suggestion:hover {
+  background-color: #f3f3f3; /* Changes the background color to #f3f3f3 on hover */
+}

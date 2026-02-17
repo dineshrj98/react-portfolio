@@ -1,0 +1,75 @@
+.experience__container {
+    /* Grid layout for dividing content into two columns */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem; /* Gap between grid items */
+}
+
+.experience__container > div {
+    /* Styling for each container div within the experience section */
+    background: var(--color-bg-variant); /* Background color */
+    padding: 2.4rem 5rem; /* Padding */
+    border-radius: 2rem; /* Border radius */
+    border: 1px solid transparent; /* Border */
+    transition: var(--transition); /* Transition effect */
+}
+
+.experience__container > div:hover {
+    /* Hover effect */
+    background: transparent; /* Transparent background */
+    border-color: var(--color-primary-variant); /* Border color */
+    cursor: default; /* Cursor style */
+}
+
+.experience__container > div h3 {
+    /* Styling for section titles */
+    text-align: center; /* Center alignment */
+    margin-bottom: 2rem; /* Bottom margin */
+    color: var(--color-primary); /* Text color */
+}
+
+.experience__content {
+    /* Grid layout for dividing content within each container */
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two columns */
+    gap: 2rem; /* Gap between grid items */
+    row-gap: 2rem; /* Gap between rows */
+}
+
+.experience__details {
+    /* Styling for individual details within each container */
+    display: flex; /* Flex layout */
+    gap: 2rem; /* Gap between items */
+}
+
+.experience__details-icon {
+    /* Styling for icons within details */
+    margin-top: 6px; /* Top margin */
+    color: var(--color-primary); /* Icon color */
+}
+
+/* Media queries for medium devices(Tablets) */
+@media screen and (max-width: 1024px) {
+    .experience__container {
+        grid-template-columns: 1fr; /* Single column layout */
+    }
+    .experience__container > div {
+        width: 80%; /* Set width */
+        padding: 2rem; /* Adjust padding */
+        margin: 0 auto; /* Center align */
+    }
+    .experience__content {
+        padding: 1rem; /* Adjust padding */
+    }
+}
+
+/* Media queries for small devices(Mobiles) */
+@media screen and (max-width: 600px) {
+    .experience__container {
+        gap: 1rem; /* Adjust gap */
+    }
+    .experience__container > div {
+        width: 100%; /* Full width */
+        padding: 2rem 1rem; /* Adjust padding */
+    }
+}
