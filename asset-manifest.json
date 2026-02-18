@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/react-portfolio/static/css/main.ac9eaeb1.css",
-    "main.js": "/react-portfolio/static/js/main.7b767d77.js",
+    "main.js": "/react-portfolio/static/js/main.dfe25bd6.js",
     "static/media/flip_img.png": "/react-portfolio/static/media/flip_img.4415200a6e224eaecc0e.png",
     "static/media/Dinesh_Ezhilmurugu_Master_Resume_.pdf": "/react-portfolio/static/media/Dinesh_Ezhilmurugu_Master_Resume_.67c86df7f52a713de880.pdf",
     "index.html": "/react-portfolio/index.html",
     "main.ac9eaeb1.css.map": "/react-portfolio/static/css/main.ac9eaeb1.css.map",
-    "main.7b767d77.js.map": "/react-portfolio/static/js/main.7b767d77.js.map"
+    "main.dfe25bd6.js.map": "/react-portfolio/static/js/main.dfe25bd6.js.map"
   },
   "entrypoints": [
     "static/css/main.ac9eaeb1.css",
-    "static/js/main.7b767d77.js"
+    "static/js/main.dfe25bd6.js"
   ]
 }
