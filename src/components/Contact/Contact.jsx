@@ -14,7 +14,7 @@ const Contact = () => {
           <iframe
             title="map"
             style={{ filter: "opacity(0.6)" }}
-            src="https://www.google.com/maps/embed/v1/place?q=131+Summerfields+Drive,+Caboolture+QLD,+Australia&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
+            src="https://maps.google.com/maps?q=131 Summerfields Dr, Caboolture QLD 4510, Australia&t=&zoom=15&maptype=roadmap&ie=UTF8&iwloc=&output=embed"
           />
       </div> 
       <h2> </h2>

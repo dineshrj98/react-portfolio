@@ -24,9 +24,7 @@ function App() {
       <Route path='/github' element={<Github />} />
       <Route path='/repo' element={<Repo />} />
       <Route path="/repo/:repoName" element={<Post />} />
-      <Route/>
       <Route path="/recipesearch" element={<SearchEngine />} />
-      <Route/>
       <Route path="/error" element={<ErrorPage />} />
       <Route path='/*' element={<Page />} />
     </Routes>
